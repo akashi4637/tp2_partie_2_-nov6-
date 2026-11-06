@@ -6,90 +6,170 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>La Bonne Table</h1>
-    <p>Restaurant tunisien</p>
-    <p>Bienvenue sur notre page de contact</p>
-    </header>
-    <nav><a href="index.html">Accueil</a>
-    <a href="menu.html">Menu</a>
-    <a href="contact.html">Contact</a></nav>
+    <header><h1>Contactez-nous / Inscrivez-vous</h1></header>
+     <nav>
+        <a href="index.html">Accueil</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-    <section>
-    <h2>Réservation</h2>
 
-    <form>
 
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom">
+    <main>
 
-        <br><br>
+        <form action="">
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+                <div>
+                    <label for="nom">Nom* :</label>
+                    <input type="text" id="nom" name="nom" required autofocus maxlength="50" placeholder="Votre nom">
+                </div>
 
-        <label for="prenom">Prénom :</label>
-        <input type="text" id="prenom" name="prenom">
+                <div>
+                    <label for="prenom">Prénom* :</label>
+                    <input type="text" id="prenom" name="prenom" required maxlength="50" placeholder="Votre prénom">
+                </div>
 
-        <br><br>
+                <div>
+                    <label for="date_naissance">Date de naissance :</label>
+                    <input type="date" id="date_naissance" name="date_naissance">
+                </div>
 
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email">
+                <div>
+                    <label for="email">Adresse email* :</label>
+                    <input type="email" id="email" name="email" required placeholder="exemple@email.com">
+                </div>
 
-        <br><br>
-        <label for="psw"> mot de passe</label>
-        <input type="password" id="psw" name="psw" minlength="8" maxlength="20">
-        <br><br>
+                <div>
+                    <label for="site_web">Site web :</label>
+                    <input type="url" id="site_web" name="site_web" value="http://www." placeholder="https://monsite.com">
+                </div>
 
-        <label for="personnes">Nombre de personnes :</label>
-        <input type="number" id="personnes" name="personnes" min="1" max="20">
+                <div>
+                    <label for="code_secret">Code secret :</label>
+                    <input type="password" id="code_secret" name="code_secret" minlength="6" maxlength="20">
+                </div>
 
-        <br><br>
+                <div>
+                    <label>Genre :</label>
+                    <input type="radio" id="homme" name="genre" value="Homme" checked>
+                    <label for="homme">Homme</label>
+                    <input type="radio" id="femme" name="genre" value="Femme">
+                    <label for="femme">Femme</label>
+                </div>
 
-        <label for="date">Date :</label>
-        <input type="date" id="date" name="date">
+                <div>
+                    <label for="pays">Pays :</label>
+                    <select id="pays" name="pays">
+                        <option value="Tunisie">Tunisie</option>
+                        <option value="France">France</option>
+                        <option value="Algérie">Algérie</option>
+                        <option value="Maroc">Maroc</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
 
-        <br><br>
+                <div>
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" pattern="[0-9]{8}" placeholder="12345678">
+                </div>
+            </fieldset>
 
-        <p>Type de repas :</p>
+            <fieldset>
+                <legend>Informations complémentaires</legend>
+                <div>
+                    <label for="adresse">Adresse postale :</label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Votre adresse">
+                </div>
 
-        <input type="radio" id="midi" name="repas" value="midi">
-        <label for="midi">Déjeuner</label>
+                <div>
+                    <label for="code_postal">Code postal :</label>
+                    <input type="text" id="code_postal" name="code_postal" value="1000" maxlength="4">
+                </div>
 
-        <input type="radio" id="soir" name="repas" value="soir">
-        <label for="soir">Dîner</label>
+                <div>
+                    <label for="semestre">Semestre :</label>
+                    <select id="semestre" name="semestre">
+                        <option value="S1">S1</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                        <option value="S4">S4</option>
+                    </select>
+                </div>
 
-        <br><br>
+                <div>
+                    <label for="region">Région préférée :</label>
+                    <select id="region" name="region">
+                        <option value="Tunis">Tunis</option>
+                        <option value="Sousse">Sousse</option>
+                        <option value="Sfax">Sfax</option>
+                        <option value="Djerba">Djerba</option>
+                        <option value="Tozeur">Tozeur</option>
+                    </select>
+                </div>
 
-        <p>Plats préférés :</p>
+            </fieldset>
 
-        <input type="checkbox" id="couscous" name="plat" value="couscous">
-        <label for="couscous">Couscous</label>
 
-        <input type="checkbox" id="pates" name="plat" value="pates">
-        <label for="pates">Pâtes tunisiennes</label>
+            <fieldset>
+                <legend>Goûts et centres d’intérêt</legend>
+                <div>
+                    <label>Centres d'intérêt :</label>
+                    <input type="checkbox" id="culture" name="interets" value="Culture" checked>
+                    <label for="culture">Culture</label>
 
-        <input type="checkbox" id="ojja" name="plat" value="ojja">
-        <label for="ojja">Ojja</label>
+                    <input type="checkbox" id="gastronomie" name="interets" value="Gastronomie">
+                    <label for="gastronomie">Gastronomie</label>
 
-        <br><br>
+                    <input type="checkbox" id="plage" name="interets" value="Plage">
+                    <label for="plage">Plage</label>
 
-        <label for="heure">Heure :</label>
+                    <input type="checkbox" id="desert" name="interets" value="Désert">
+                    <label for="desert">Désert</label>
 
-        <select id="heure" name="heure">
-            <option>12PM</option>
-            <option>1PM</option>
-            <option>7PM</option>
-            <option>8PM</option>
-        </select>
+                    <input type="checkbox" id="histoire" name="interets" value="Histoire">
+                    <label for="histoire">Histoire</label>
+                </div>
 
-        <br><br>
+                <div>
+                    <label for="niveau_html">Niveau en HTML :</label>
+                    <input type="range" id="niveau_html" name="niveau_html" min="0" max="100" step="10">
+                </div>
 
-        <label for="message">Message :</label><br>
-        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+                <div>
+                    <label for="satisfaction">Note de satisfaction :</label>
+                    <input type="number" id="satisfaction" name="satisfaction" min="1" max="10" step="1">
+                </div>
 
-        <br><br>
+                <div>
+                    <label for="message">Message / Commentaire :</label>
+                    <textarea id="message" name="message" rows="5" cols="40" placeholder="Écrivez votre message ici..."></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Photo</legend>
+                <div>
+                    <label for="photo">Photo de profil :</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </div>
 
-        <input type="submit" value="Envoyer">
+                <div>
+                    <input type="submit" value="Envoyer">
+                    <input type="reset" value="Effacer">
+                </div>
+            </fieldset>
 
-    </form>
-</section>
+
+
+        </form>
+        <p><a href="index.html">Retour à l’accueil</a></p>
+    </main>
+
+
+
+
+    
+    
+    <footer><strong>Copyright</strong></footer>
 </body>
 </html>
