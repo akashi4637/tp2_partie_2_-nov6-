@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>La Bonne Table</h1>
+    <p>Restaurant tunisien</p>
+    <p>Bienvenue sur notre page de contact</p>
+    </header>
+    <nav><a href="index.html">Accueil</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a></nav>
+
+    <section>
+    <h2>Réservation</h2>
+
+    <form>
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom">
+
+        <br><br>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom">
+
+        <br><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email">
+
+        <br><br>
+        <label for="psw"> mot de passe</label>
+        <input type="password" id="psw" name="psw" minlength="8" maxlength="20">
+        <br><br>
+
+        <label for="personnes">Nombre de personnes :</label>
+        <input type="number" id="personnes" name="personnes" min="1" max="20">
+
+        <br><br>
+
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date">
+
+        <br><br>
+
+        <p>Type de repas :</p>
+
+        <input type="radio" id="midi" name="repas" value="midi">
+        <label for="midi">Déjeuner</label>
+
+        <input type="radio" id="soir" name="repas" value="soir">
+        <label for="soir">Dîner</label>
+
+        <br><br>
+
+        <p>Plats préférés :</p>
+
+        <input type="checkbox" id="couscous" name="plat" value="couscous">
+        <label for="couscous">Couscous</label>
+
+        <input type="checkbox" id="pates" name="plat" value="pates">
+        <label for="pates">Pâtes tunisiennes</label>
+
+        <input type="checkbox" id="ojja" name="plat" value="ojja">
+        <label for="ojja">Ojja</label>
+
+        <br><br>
+
+        <label for="heure">Heure :</label>
+
+        <select id="heure" name="heure">
+            <option>12PM</option>
+            <option>1PM</option>
+            <option>7PM</option>
+            <option>8PM</option>
+        </select>
+
+        <br><br>
+
+        <label for="message">Message :</label><br>
+        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Envoyer">
+
+    </form>
+</section>
+</body>
+</html>
