@@ -1,0 +1,19 @@
+1) La balise <form> sa sert a créer un formulaire pour que l'utilisateur il peut envoyer des informations.
+
+
+2) On associe le label avec le champ pour que quand on clique sur le mot, sa sélectionne direct la case.
+
+
+3) L'attribut pattern il bloque le numéro si il est pas écrit bien avec le format qu'on a demandé.
+
+
+4) Les boutons radio ils ont le même name pour que le navigateur il comprend qu'on peut choisir une seule repense entre eux.
+
+
+5) <fieldset> sa fait une boite autour des champs et <legend> sa met un petit titre en haut de la boite.
+
+
+6) Le bouton `submit` il envoie le formulaire, mais le bouton reset il efface tout ce qu'on a écrit.
+
+
+7) accept="image/*" sa permet de choisir seulement des photos depuis le téléphone ou l'ordinateur.
