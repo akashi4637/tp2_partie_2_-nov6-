@@ -1,0 +1,25 @@
+8. La propriété `color` sa change la couleur du texte, mais `background-color` sa change la couleur de derrière (le fond du bloc).
+
+
+9. Pour choisir la famille de caractères on utilise la propriété `font-family`.
+
+
+10. Pour modifier la taille des lettres on utilise la propriété `font-size`.
+
+
+11. `font-size` sa change la grandeur du texte (si c'est petit ou grand), alors que `font-weight` sa change l'épaisseur (pour mettre en gras par exemple).
+
+
+12. `text-align` sa sert a aligner le texte. Les trois valeurs possibles c'est `left`, `center` et `right`.
+
+
+13. Le `padding` c'est l'espace a l'intérieur de la boite (entre le texte et le bord), et le `margin` c'est l'espace a l'extérieur (pour éloigner la boite des autres éléments).
+
+
+14. Il faut le mettre pour que si l'image elle s'affiche pas.
+
+
+15. `caption` sa met un titre au tableau, `th` c'est pour les cellules d'en-tête (les titres des colonnes ou lignes), et `td` c'est pour les cellules normales de données.
+
+
+16. C'est utile parce que comme sa on modifie le design une seule fois dans le fichier CSS et sa s'applique partout sur toutes les pages du site sans tout refaire page par page.
