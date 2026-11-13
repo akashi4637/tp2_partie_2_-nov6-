@@ -1,47 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>La Bonne Table - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
-    img {
-        width: 500px;
-        height: auto;
-        border-radius: 10px;
-        display: block;
-        margin: 20px auto;
-    }
-</style>
+        img {
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 20px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #24527a;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
-         <h1>La Bonne Table</h1>
-    <p>Restaurant tunisien</p>
-    <p>Bienvenue dans notre restaurant</p>
+        <h1>La Bonne Table</h1>
+        <p>Restaurant tunisien</p>
+        <p>Bienvenue dans notre restaurant</p>
     </header>
+    
     <nav>
         <a href="index.html">Accueil</a>
         <a href="menu.html">Menu</a>
         <a href="contact.html">Contact</a>
+        <a href="produits.html">Produits</a>
     </nav>
+    
     <section>
-        Bienvenue au restaurant « La Bonne Table ». <br>
+        <h2>Présentation de notre projet</h2>
+        <p>Bienvenue au restaurant « La Bonne Table ». <br>
+        Notre restaurant propose plusieurs plats, desserts et boissons traditionnels. <br>
+        Nous préparons des plats simples et bons pour tous nos clients. <br>
+        Venez découvrir notre menu et passer un bon moment avec nous !</p>
+        
+        <img src="images/restaurant-long-dining-table-setting-with-silverware-and-wineglass-for-catering-photo.jpg" alt="Salle à manger élégante du restaurant La Bonne Table">
 
-    Notre restaurant propose plusieurs plats, desserts et boissons. <br>
-
-    Nous préparons des plats simples et bons pour nos clients. <br>
-
-    Venez découvrir notre menu et passer un bon moment avec nous
-    <img src="images/restaurant-long-dining-table-setting-with-silverware-and-wineglass-for-catering-photo.jpg" alt="">
-
+        <h3>Informations Utiles</h3>
+        <table>
+            <caption>Horaires et services</caption>
+            <tr>
+                <th>Service</th>
+                <th>Horaires</th>
+            </tr>
+            <tr>
+                <td>Déjeuner</td>
+                <td>11:00 - 15:00</td>
+            </tr>
+            <tr>
+                <td>Dîner</td>
+                <td>18:00 - 22:00</td>
+            </tr>
+        </table>
     </section>
+
     <footer>
-    <p>La Bonne Table - Restaurant tunisien</p>
-    <p>Adresse : Avenue Habib Bourguiba, Mahdia</p>
-    <p>Téléphone : 71 000 000</p>
-    <p>Email : labonnetable@gmail.com</p>
-    <p>Horaires : 11AM - 10PM</p>
+        <p>La Bonne Table - Restaurant tunisien</p>
+        <p>Adresse : Avenue Habib Bourguiba, Mahdia</p>
+        <p>Téléphone : 71 000 000</p>
+        <p>Email : labonnetable@gmail.com</p>
+        <p>Horaires : 11AM - 10PM</p>
     </footer>
 </body>
 </html>
